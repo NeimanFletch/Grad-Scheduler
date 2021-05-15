@@ -1,20 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
+import React, { Component } from "react";
 
-class coreClasses extends React.Component {
-  render() {
-    return <p>{this.props.title}</p>;
-  }
-}
-
-function App() {
+const helloWorld = () => {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <coreClasses title="fas" />
+    <div>
+      <p>Hello World</p>
     </div>
   );
-}
+};
+const App = () => {
+  return (
+    <div>
+      <p>hello</p>
+      <helloWorld />
+    </div>
+  );
+};
 
 export default App;

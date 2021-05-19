@@ -1,10 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
-import React, { Component } from "react";
+import React from "react";
 
-const Coreclass = () => {
-  return <div></div>;
-};
+class Coreclass extends React.Component {
+  constructor(props) {
+    super(props);
 
-class App extends React.Component {}
-export default App;
+    this.state = {};
+  }
+  render() {
+    //can loop with create element
+    return <div>{React.createElement("p", {}, "pf")}</div>;
+  }
+}
+
+class App extends React.Component {
+  render() {
+    return <Coreclass />;
+  }
+}
+
+export { App, Coreclass };
